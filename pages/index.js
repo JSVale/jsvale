@@ -1,4 +1,6 @@
+import { getAllPosts } from '@api';
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -9,26 +11,15 @@ export default function Home() {
 				<link rel="icon" href="https://avatars3.githubusercontent.com/u/57258568?v=4" />
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 			</Head>
-
-			<main className={styles.main}>
-				<section className={styles.notReady}>
-					<h1>Em construção</h1>
-					<div className={styles.loader}>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</section>
-				<section className={styles.socialMedia}>
-					<h3>Entre em contato conosco</h3>
-					<div className={styles.socialMediaIcons}>
-						<a href="https://discord.gg/vGH7wJN9"><i class="fab fa-discord fa-2x"></i></a>
-						<a href="mailto:jsinvale@gmail.com"><i class="fas fa-at fa-2x"></i></a>
-					</div>
-				</section>
-			</main>
+			<ul>
+				{props.posts.map((post, idx) => (
+					<li key={idx}>
+						<Link href={post.slug}>
+							<a>{post.title}</a>
+						</Link>
+					</li>
+				))}
+			</ul>
 
 			<footer className={styles.footer}>
 				<a
@@ -42,4 +33,13 @@ export default function Home() {
 			</footer>
 		</div>
 	)
+}
+
+export async function getStaticProps(){
+	const allPosts = await getAllPosts();
+	return {
+		props: {
+			posts: allPosts
+		}
+	}
 }
