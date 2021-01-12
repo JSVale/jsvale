@@ -1,5 +1,15 @@
+import Head from 'next/head'
+import Header from '@includes/header'
+
 export default function DefaultLayout(props){
 	return(
-		<h1>Hello</h1>
+		<main>
+			<Head>
+				<title>{props.title}</title>
+				<meta name="description" content={props.description} />
+			</Head>
+			<Header />
+			{props.children}
+		</main>
 	)
 }
