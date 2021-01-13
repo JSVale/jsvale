@@ -17,14 +17,6 @@
 .notReady h1{
 	text-align: center;
 }
-.socialMediaIcons{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-.socialMediaIcons a{
-	margin-right: 1em;
-}
 
 .footer {
   width: 100%;

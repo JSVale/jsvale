@@ -15,7 +15,6 @@ export async function getAllPosts() {
 			title: meta.data.title
 		})
 	}
-
 	return posts
 }
 
