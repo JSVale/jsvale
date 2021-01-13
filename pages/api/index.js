@@ -12,7 +12,7 @@ export async function getAllPosts() {
 
 		posts.push({
 			slug: post.replace('.md', ''),
-			title: meta.data.title
+			title: meta.data.title,
 		})
 	}
 	return posts

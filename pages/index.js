@@ -11,14 +11,11 @@ export default function Home(props) {
 				<link rel="icon" href="https://avatars3.githubusercontent.com/u/57258568?v=4" />
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 			</Head>
-
 			{props.posts.map((post, idx) => (
 				<article key={idx}>
-
 					<Link href={'/posts/' + post.slug}>
 						<a><h3>{post.title}</h3></a>
 					</Link>
-
 				</article>
 			))}
 
