@@ -1,6 +1,7 @@
 import { getAllPosts } from '@api';
 import Head from 'next/head'
 import Link from 'next/link'
+import Header from '@includes/header'
 import styles from '../styles/Home.module.css'
 
 export default function Home(props) {
@@ -11,10 +12,11 @@ export default function Home(props) {
 				<link rel="icon" href="https://avatars3.githubusercontent.com/u/57258568?v=4" />
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 			</Head>
+			<Header />
 			<ul>
 				{props.posts.map((post, idx) => (
 					<li key={idx}>
-						<Link href={post.slug}>
+						<Link href={'/posts/'+post.slug}>
 							<a>{post.title}</a>
 						</Link>
 					</li>
@@ -35,7 +37,7 @@ export default function Home(props) {
 	)
 }
 
-export async function getStaticProps(){
+export async function getStaticProps() {
 	const allPosts = await getAllPosts();
 	return {
 		props: {

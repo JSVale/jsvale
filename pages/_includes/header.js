@@ -1,10 +1,11 @@
-export default function Header(){
+import Link from 'next/link'
+import styles from "../../styles/Header.module.css"
+
+export default function Header() {
 	return (
-		<header>
+		<header className={styles.header}>
 			<ul>
-				<li>Js Vale</li>
-				<li>Home</li>
-				<li>Sobre</li>
+				<li><Link href="/"><a>Voltar</a></Link></li>
 			</ul>
 		</header>
 	)

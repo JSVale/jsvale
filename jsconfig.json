@@ -5,7 +5,7 @@
         "@includes/*": ["./pages/_includes/*"],
         "@layouts/*": ["./pages/layouts/*"],
         "@posts/*": ["./_posts/*"],
-        "@api": ["./pages/api/index"],
+		"@api": ["./pages/api/index"]
       }
     }
   }
