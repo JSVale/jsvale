@@ -6,5 +6,11 @@
   align-items: center;
 }
 .container article{
-
+	margin-top: 5%;
+}
+.linkPost{
+	font-size: 2em;
+}
+.links a{
+	padding: 0 2em;
 }

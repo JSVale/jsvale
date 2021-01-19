@@ -20,3 +20,6 @@ ul, li, ol{
 main{
 	padding: 0 10%;
 }
+p{
+	line-height: 30px;
+}
