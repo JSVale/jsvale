@@ -15,8 +15,8 @@ export default function Home(props) {
 				<article key={idx}>
 					<Link href={'/posts/' + post.slug}>
 						<a><h3>{post.title}</h3></a>
-						<p>{post.description}</p>
 					</Link>
+					<p>{post.description}</p>
 				</article>
 			))}
 
@@ -26,10 +26,13 @@ export default function Home(props) {
 }
 
 export async function getStaticProps() {
+	const siteData = await import('../config.json');
 	const allPosts = await getAllPosts();
 	return {
 		props: {
-			posts: allPosts
+			posts: allPosts,
+			title: siteData.default.title,
+			description: siteData.default.description,
 		}
 	}
 }
