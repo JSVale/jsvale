@@ -14,7 +14,7 @@ export default function Home(props) {
 			{props.posts.map((post, idx) => (
 				<article key={idx}>
 					<Link href={'/posts/' + post.slug}>
-						<a><h3>{post.title}</h3></a>
+						<a>{post.title}</a>
 					</Link>
 					<p>{post.description}</p>
 				</article>
