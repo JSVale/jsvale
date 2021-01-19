@@ -1,0 +1,10 @@
+.main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: flex-start;
+}
+.article{
+	text-align: center;
+}
+

@@ -15,6 +15,7 @@ export default function Home(props) {
 				<article key={idx}>
 					<Link href={'/posts/' + post.slug}>
 						<a><h3>{post.title}</h3></a>
+						<p>{post.description}</p>
 					</Link>
 				</article>
 			))}

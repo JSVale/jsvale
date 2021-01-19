@@ -17,3 +17,6 @@ a {
 ul, li, ol{
 	list-style: none;
 }
+main{
+	padding: 0 10%;
+}

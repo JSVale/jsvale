@@ -1,5 +1,6 @@
 import DefaultLayout from "@layouts/default";
 import Head from 'next/head'
+import styles from './styles.module.css'
 
 export default function PostLayout(props){
 	return(
@@ -8,7 +9,7 @@ export default function PostLayout(props){
 				<title>{props.title}</title>
 				<meta name='description' content={props.description} />
 			</Head>
-			<article>
+			<article className={styles.article}>
 				<h1>{props.title}</h1>
 				<p>{props.description}</p>
 				<div dangerouslySetInnerHTML={{__html:props.content}} />
