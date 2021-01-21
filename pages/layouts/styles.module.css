@@ -7,4 +7,7 @@
 .article{
 	text-align: center;
 }
+.article img{
+	max-width: 100%;
+}
 
