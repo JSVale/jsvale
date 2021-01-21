@@ -1,9 +1,10 @@
 ---
 title: "NodeJS"
+excerpt: "Instalação do ambiente de desenvolvimento e seus pacotes"
 ---
 Olá amigos, preparados para o curso? Com esse artigo irei ajudar você a configurar o seu computador para iniciar nesse mundo de desenvolvimento web.
 
-![nodejs](./images/nodejs.jpeg)
+![nodejs](https://raw.githubusercontent.com/JSVale/jsvale/main/_posts/images/nodejs.jpeg)
 
 > Node.js é um interpretador de JavaScript assíncrono com código aberto orientado a eventos.
 

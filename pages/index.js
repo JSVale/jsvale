@@ -5,7 +5,7 @@ import { FaAt, FaDiscord } from 'react-icons/fa';
 import { SiNotion } from 'react-icons/si'
 import styles from '../styles/Home.module.css'
 
-export default function Home(props) {
+export default function Home({ allPosts }) {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -17,11 +17,14 @@ export default function Home(props) {
 				<p className={styles.instructions}>Instruções para o curso de desenvolvimento web</p>
 				<p className={styles.dateCourse}>O curso vai acontecer nos dias 25, 26 e 27 de Janeiro de 2021</p>
 				<section className={styles.posts}>
-					{props.posts.map((post, idx) => (
-						<article key={idx}>
+					{allPosts.map((post) => (
+						<article key={post.slug}>
 							<Link href={'/posts/' + post.slug}>
 								<a className={styles.linkPost}>{post.title}</a>
 							</Link>
+							<p className={styles.description}>
+								{post.excerpt}
+							</p>
 						</article>
 					))}
 				</section>
@@ -40,13 +43,13 @@ export default function Home(props) {
 }
 
 export async function getStaticProps() {
-	const siteData = await import('../config.json');
-	const allPosts = await getAllPosts();
+	const allPosts = await getAllPosts([
+		'title',
+		'excerpt',
+	]);
 	return {
 		props: {
-			posts: allPosts,
-			title: siteData.default.title,
-			description: siteData.default.description,
+			allPosts
 		}
 	}
 }

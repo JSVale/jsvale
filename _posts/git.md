@@ -1,6 +1,6 @@
 ---
 title: "Git e Github"
-description: "Instalação git windows/linux, criar conta github"
+excerpt: "Instalação git windows/linux, criar conta github"
 ---
 
 ### O que é o Git?
