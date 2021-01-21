@@ -7,3 +7,6 @@
 	flex-direction: row;
 	justify-content: flex-start;
 }
+.header ul li svg{
+	margin-right: 1em;
+}

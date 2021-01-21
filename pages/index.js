@@ -1,8 +1,7 @@
 import { getAllPosts } from '@api';
+import Footer from '@includes/footer';
 import Head from 'next/head'
 import Link from 'next/link'
-import { FaAt, FaDiscord } from 'react-icons/fa';
-import { SiNotion } from 'react-icons/si'
 import styles from '../styles/Home.module.css'
 
 export default function Home({ allPosts }) {
@@ -29,14 +28,7 @@ export default function Home({ allPosts }) {
 					))}
 				</section>
 			</main>
-			<footer className={styles.footer}>
-				<p>Nossos links</p>
-				<div className={styles.links}>
-					<Link href="https://discord.gg/vGH7wJN9"><a><FaDiscord size={40} /></a></Link>
-					<Link href="mailto:jsinvale@gmail.com"><a><FaAt size={40} /></a></Link>
-					<Link href="https://www.notion.so/JS-Vale-df525e12f8ae492698c2bef0dd4d8276"><a><SiNotion size={40} /></a></Link>
-				</div>
-			</footer>
+			<Footer />
 		</div>
 
 	)

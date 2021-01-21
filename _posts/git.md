@@ -15,3 +15,5 @@ Além disso, o Git nos ajuda muito a controlar o fluxo de novas funcionalidades 
 O Github é um serviço online de hospedagem de repositórios Git (como são chamados os projetos que utilizam Git). Com ele podemos manter todos nossos commits e ramos sincronizados entre os membros do time.
 
 Além de servir como hospedagem, o Github possui muitas integrações com serviços que auxiliam no deploy da aplicação através de integração contínua.
+
+### Como instalar
