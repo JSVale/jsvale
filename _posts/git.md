@@ -2,7 +2,7 @@
 title: "Git e Github"
 excerpt: "Instalação git windows/linux, criar conta github"
 ---
-
+![git](https://raw.githubusercontent.com/JSVale/jsvale/main/_posts/images/gitgithub.png)
 ### O que é o Git?
 
 O Git é um sistema open-source de controle de versão utilizado pela grande maioria dos desenvolvedores atualmente. Com ele podemos criar todo histórico de alterações no código do nosso projeto e facilmente voltar para qualquer ponto para saber como o código estava naquela data.
