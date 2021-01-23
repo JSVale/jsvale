@@ -1,6 +1,6 @@
 import DefaultLayout from "@layouts/default";
 import Head from 'next/head'
-import styles from './styles.module.css'
+import styles from '../../styles/Post.module.css'
 
 export default function PostLayout(props){
 	return(

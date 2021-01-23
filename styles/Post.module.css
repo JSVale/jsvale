@@ -1,0 +1,15 @@
+.article div blockquote{
+	margin: 0;
+	padding-left: 1.4rem;
+	border-left: 4px solid #dadada;
+	background-color: #eee;
+}
+@media (max-width: 700px){
+	.article p img{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+

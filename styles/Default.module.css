@@ -7,4 +7,8 @@
 .article{
 	text-align: center;
 }
-
+@media (max-width: 700px){
+	.article{
+		padding: 0 15%;
+	}
+}
