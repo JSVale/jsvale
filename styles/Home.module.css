@@ -1,15 +1,15 @@
 .container {
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
+	padding: 0 0.5rem;
+	display: flex;
+	flex-direction: column;
 }
-.posts{
+.posts {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin-top: 5em;
 }
-.posts article{
+.posts article {
 	width: 33%;
 	padding: 3em 2em;
 	border: 0.5px solid #ccc;
@@ -18,22 +18,23 @@
 	flex-direction: column;
 	justify-content: space-between;
 }
-.posts .description{
-	font-size:1.2em;
+.posts .description {
+	font-size: 1.2em;
 	color: #333;
 	text-align: center;
 }
-.instructions, .dateCourse{
+.instructions,
+.dateCourse {
 	text-align: center;
 }
-.instructions{
+.instructions {
 	font-size: 2em;
 	font-weight: bold;
 }
-.dateCourse{
+.dateCourse {
 	font-size: 1.3em;
 }
-.linkPost{
+.linkPost {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -41,11 +42,21 @@
 	font-size: 1.5em;
 	text-align: center;
 }
-@media (max-width: 700px){
-	.posts{
-		flex-direction: column
+@media (max-width: 1000px) {
+	.posts {
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
-	.posts article{
+	.posts article {
+		width: 45%;
+		margin-bottom: 2em;
+	}
+}
+@media (max-width: 700px) {
+	.posts {
+		flex-direction: column;
+	}
+	.posts article {
 		width: 100%;
 		margin-bottom: 2em;
 	}

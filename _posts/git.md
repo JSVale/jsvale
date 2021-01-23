@@ -30,7 +30,7 @@ Na maioria das distribuições Linux, o git já vem instalado nativamente, para 
 ##### Debian/Ubuntu
 > sudo apt-get install git
 
-- via PPA
+##### via PPA
 
 > add-apt-repository ppa:git-core/ppa && apt update && apt install git
 
