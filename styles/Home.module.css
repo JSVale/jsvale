@@ -6,17 +6,19 @@
 .posts {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	margin-top: 5em;
 }
 .posts article {
-	width: 33%;
+	width: 40%;
 	padding: 3em 2em;
 	border: 0.5px solid #ccc;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-bottom: 2em;
 }
 .posts .description {
 	font-size: 1.2em;
@@ -42,7 +44,8 @@
 	font-size: 1.5em;
 	text-align: center;
 }
-@media (max-width: 1000px) {
+
+@media (max-width: 900px) {
 	.posts {
 		flex-direction: row;
 		flex-wrap: wrap;

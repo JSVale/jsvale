@@ -1,16 +1,42 @@
+.article{
+	text-align: center;
+}
+.article h1{
+	font-size: 2em;
+}
+.article h2{
+	font-size: 1.8em;
+}
+.article h3{
+	font-size: 1.6em;
+}
+.article h4{
+	font-size: 1.4em;
+}
+.article h5{
+	font-size: 1.2em;
+}
 .article div blockquote{
 	margin: 0;
 	padding-left: 1.4rem;
 	border-left: 4px solid #dadada;
 	background-color: #eee;
+	text-align: left;
 }
 .article p img{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	width: 80%;
+}
+.article p a{
+	font-weight: 700;
+	border-bottom: 2px dotted #111;
 }
 @media (max-width: 700px){
+	.article h1{
+		font-size: 2em;
+	}
+	.article h2{
+		font-size: 1.8em;
+	}
 	.article h3{
 		font-size: 1.6em;
 	}
@@ -22,6 +48,15 @@
 	}
 }
 @media (max-width: 1000px){
+	.article p img{
+		width: 90%;
+	}
+	.article h1{
+		font-size: 2.2em;
+	}
+	.article h2{
+		font-size: 2em;
+	}
 	.article h3{
 		font-size: 1.8em;
 	}
