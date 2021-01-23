@@ -10,3 +10,11 @@
 .header ul li svg{
 	margin-right: 1em;
 }
+@media (max-width: 700px){
+	.header ul{
+		justify-content: center;
+	}
+	.header ul li svg{
+		margin-right: .1em;
+	}
+}
